@@ -171,19 +171,30 @@
     min-height: 45rem;
     background-color: #fff;
     border-radius: 3rem;
-    padding: 3.125rem;
+    padding: 3rem;
     display: flex;
     justify-content: start;
     align-items: center;
     flex-direction: column;
 }
 
+.modal-window .modal-content .fechar-modal {
+    position: absolute;
+    top: 4rem;
+    height: 30px;
+    width: 30px;
+    border: none;
+    border-radius: 45%;
+    background-color: rgb(253, 67, 67);
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
 .modal-window .modal-content .pokemon-status {
     list-style: none;
-    position: relative;
-    top: 6rem;
     margin: 0;
-    padding: 0;
+    padding: 7.4rem;
 }
 
 @media screen and (min-width: 380px) {
