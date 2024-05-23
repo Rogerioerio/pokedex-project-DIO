@@ -184,14 +184,15 @@
 
 .modal-window .modal-content .fechar-modal {
     position: absolute;
-    top: 6rem;
+    top: .5rem;
+    right: 1.6rem;
     height: 30px;
     width: 30px;
     border: none;
     border-radius: 45%;
-    background-color: rgb(253, 67, 67);
-    color: #fff;
-    font-size: 20px;
+    background-color: rgb(253 67 67 / 0%);
+    color: #000000;
+    font-size: 30px;
     cursor: pointer;
 }
 
