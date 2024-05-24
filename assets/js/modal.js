@@ -8,7 +8,7 @@ function abrirModal(pokemonId) {
         <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemon.number}.svg" class="modal-pokeImg" alt="${pokemon.name}">
         <ol class="pokemon-status">
             <li class="pokemonHP">HP - ${pokemon.stats}</li>
-            <li class="pokemonATK">Attack - ${pokemon.stats}</li>
+            <li class="pokemonATK">Attack - ${pokemon.stats.}</li>
             <li class="pokemonDEF">Defense - ${pokemon.stats}</li>
             <li class="pokemonSpATK">Sp.Atk - ${pokemon.stats}</li>
             <li class="pokemonSpDEF">Sp.Def - ${pokemon.stats}</li>

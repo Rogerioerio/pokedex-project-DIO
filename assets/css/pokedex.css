@@ -170,9 +170,9 @@
 
 .modal-window .modal-content {
     width: 30%;
-    height: 80%;
+    height: 65%;
     min-width: 22rem;
-    min-height: 45rem;
+    min-height: 38rem;
     background-color: #fff;
     border-radius: 3rem;
     padding: 3rem;
@@ -182,10 +182,70 @@
     flex-direction: column;
 }
 
+.modal-window .modal-content .modal-pokeTitle {
+    text-transform: capitalize;
+}
+
 .modal-window .modal-content img {
     border-style: none;
     max-width: 100%;
     height: 16rem;
+}
+
+.modal-window .modal-content .pokemon-status .pokemonHP {
+    text-align: center;
+    padding: 0.3rem;
+    color: black;
+    background-color: #ff5959;
+    border-radius: 1rem;
+}
+
+.modal-window .modal-content .pokemon-status .pokemonATK {
+    text-align: center;
+    padding: 0.3rem;
+    color: black;
+    background-color: #f5ac78;
+    border-radius: 1rem;
+}
+
+.modal-window .modal-content .pokemon-status .pokemonDEF {
+    text-align: center;
+    padding: 0.3rem;
+    color: black;
+    background-color: #fae078;
+    border-radius: 1rem;
+}
+
+.modal-window .modal-content .pokemon-status .pokemonSpATK {
+    text-align: center;
+    padding: 0.3rem;
+    color: black;
+    background-color: #9db7f5;
+    border-radius: 1rem;
+}
+
+.modal-window .modal-content .pokemon-status .pokemonSpDEF {
+    text-align: center;
+    padding: 0.3rem;
+    color: black;
+    background-color: #a7db8d;
+    border-radius: 1rem;
+}
+
+.modal-window .modal-content .pokemon-status .pokemonSPEED {
+    text-align: center;
+    padding: 0.3rem;
+    color: black;
+    background-color: #fa92b2;
+    border-radius: 1rem;
+}
+
+.modal-window .modal-content .pokemon-status .pokemonTOTAL {
+    text-align: center;
+    padding: 0.3rem;
+    color: black;
+    background-color: #f5ac78;
+    border-radius: 1rem;
 }
 
 .modal-window .modal-content .fechar-modal {
