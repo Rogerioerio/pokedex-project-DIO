@@ -182,6 +182,12 @@
     flex-direction: column;
 }
 
+.modal-window .modal-content img {
+    border-style: none;
+    max-width: 100%;
+    height: 16rem;
+}
+
 .modal-window .modal-content .fechar-modal {
     position: absolute;
     top: .5rem;
@@ -212,7 +218,7 @@
 .modal-window .modal-content .pokemon-status {
     list-style: none;
     margin: 0;
-    padding: 7.4rem;
+    padding: 1rem;
 }
 
 @media screen and (min-width: 380px) {

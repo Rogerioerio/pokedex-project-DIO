@@ -8,8 +8,7 @@ let offset = 0;
 function loadPokemonItems(offset, limit) {
     pokeApi.getPokemons(offset, limit).then((pokemons = []) => {
         const newHtml = pokemons.map((pokemon) => `
-                <li onclick="abrirModal()" class="pokemon ${pokemon.type}">
-
+                <li onclick="abrirModal(${pokemon.number})" class="pokemon ${pokemon.type}" id="${pokemon.number}">
                         <span class="number">#${pokemon.number}</span>
                         <span class="name">${pokemon.name}</span> 
 
