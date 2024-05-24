@@ -3,16 +3,18 @@ function abrirModal(pokemonId) {
     const modalContent = document.getElementById('modal-content');
 
     pokeApi.getPokemonModal(pokemonId).then((pokemon) => {
+        const pokemonStats = pokemon.stats;
+
         const newHtmlModal = `
         <h1 class="modal-pokeTitle">${pokemon.name}</h1>
         <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemon.number}.svg" class="modal-pokeImg" alt="${pokemon.name}">
         <ol class="pokemon-status">
-            <li class="pokemonHP">HP - ${pokemon.stats}</li>
-            <li class="pokemonATK">Attack - ${pokemon.stats.}</li>
-            <li class="pokemonDEF">Defense - ${pokemon.stats}</li>
-            <li class="pokemonSpATK">Sp.Atk - ${pokemon.stats}</li>
-            <li class="pokemonSpDEF">Sp.Def - ${pokemon.stats}</li>
-            <li class="pokemonSPEED">Speed - ${pokemon.stats}</li>
+            <li class="pokemonHP">HP - ${pokemonStats[0]}</li>
+            <li class="pokemonATK">Attack - ${pokemonStats[1]}</li>
+            <li class="pokemonDEF">Defense - ${pokemonStats[2]}</li>
+            <li class="pokemonSpATK">Sp.Atk - ${pokemonStats[3]}</li>
+            <li class="pokemonSpDEF">Sp.Def - ${pokemonStats[4]}</li>
+            <li class="pokemonSPEED">Speed - ${pokemonStats[5]}</li>
             <li class="pokemonTOTAL">Total - 00 </li>
         </ol>
         <button class="fechar-modal" id="fechar-modal">X</button>
